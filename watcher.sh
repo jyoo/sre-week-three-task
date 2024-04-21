@@ -26,4 +26,4 @@ while true; do
     sleep 60
 done
 
-echo "Deployment has been scaled down."
+echo "Deployment has been scaled down due to multiple restart attempts"
