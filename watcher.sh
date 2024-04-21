@@ -2,7 +2,7 @@
 
 # Define Variables
 NAMESPACE="your_namespace"
-DEPLOYMENT_NAME="swype"
+DEPLOYMENT_NAME="swype-app"
 MAX_RESTARTS=3
 
 # Start an infinite loop
