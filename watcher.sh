@@ -8,7 +8,7 @@ MAX_RESTARTS=3
 # Start an infinite loop
 while true; do
     # Get the current number of restarts for the pod
-    CURRENT_RESTARTS=$(kubectl get pods -n $NAMESPACE -l app=$DEPLOYMENT_NAME -o jsonpath='{.items[*].status.containerStatuses[*].restartCount}')
+    CURRENT_RESTARTS=$(kubectl get pods -n $NAMESPACE -l component=$DEPLOYMENT_NAME -o jsonpath='{.items[*].status.containerStatuses[*].restartCount}')
 
     # Display the restart count
     echo "Current restart count: $CURRENT_RESTARTS"
